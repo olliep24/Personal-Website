@@ -24,6 +24,7 @@ body{
 }
 
 nav {
+    z-index: 99; /* makes sure that links on buttons work */
     position: sticky;
     top: 0;
     background-color: var(--california-blue);
