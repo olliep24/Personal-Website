@@ -9,7 +9,8 @@
 }
 
 body{
-    font-family: 'Exo', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--columbia-blue);
 }
 
 :root {
@@ -21,13 +22,14 @@ body{
     --ivory: #FFFFF0;
     --california-blue: #449DD1;
     --iceberg: #79A9D1;
+    --columbia-blue: #ADCAD6;
 }
 
 nav {
     z-index: 99; /* makes sure that links on buttons work */
     position: sticky;
     top: 0;
-    background-color: var(--california-blue);
+    background-color: var(--iceberg);
     height: 50px;
     display: flex;
     justify-content: center;
@@ -51,47 +53,75 @@ nav {
     border-radius: 5px;
 }
 
-#main-body {
-    background-color: var(--ivory);
-    position: relative;
-    width: auto; 
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #image-block {
+    background-color: var(--ivory);
     position: fixed;
-    top: 100px;
+    top: 75px;
     left: 100px;
-    width: 500px;
-    padding: 20px; 
-    background-color: var(--california-blue);
+    width: 240px;
+    padding: 20px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
+    gap: 1rem;
+}
+
+.image-block-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #me-image {
     width: 200px;
     height: 200px;
+    padding: 8px;
+    border-color: var(--iceberg);
     border-radius: 50%;
     border-style: solid;
     border-width: 3px;
 }
 
-#link-images {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.primary-title {
     width: 100%;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.secondary-title {
+    width: 100%;
+    font-size: 1rem;
+    opacity: 75%;
+}
+
+#link-images {
+    background-color: var(--iceberg);
+    padding: 0.3rem 0 0 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
 }
 
 .link-image {
     width: 32px; 
     height: 32px;
+}
+
+#other-info {
+    background-color: var(--ivory);
+    position: fixed;
+    width: 240px;
+    top: 500px;
+    left: 100px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #content {
@@ -107,7 +137,7 @@ nav {
 
 .content-box {
     position: relative;
-    background-color: var(--california-blue);
+    background-color: var(--ivory);
     width: 90%;
     height: 200px;
     border-radius: 15px;
