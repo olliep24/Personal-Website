@@ -9,7 +9,8 @@
 }
 
 body{
-    font-family: 'Exo', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--columbia-blue);
 }
 
 :root {
@@ -21,13 +22,14 @@ body{
     --ivory: #FFFFF0;
     --california-blue: #449DD1;
     --iceberg: #79A9D1;
+    --columbia-blue: #ADCAD6;
 }
 
 nav {
     z-index: 99; /* makes sure that links on buttons work */
     position: sticky;
     top: 0;
-    background-color: var(--california-blue);
+    background-color: var(--iceberg);
     height: 50px;
     display: flex;
     justify-content: center;
@@ -60,18 +62,32 @@ h1 {
     width: 42.5vw;
     position: relative;
     left: 7.5vw;
-    border-right: dotted;
+    border-right: solid;
+    border-color: var(--california-blue);
+    border-width: 0.16rem;
 }
 
 .left-box {
-    background-color: var(--california-blue);
-    margin: 2.5%;
+    background-color: var(--ivory);
+    margin: 1rem;
     height: 200px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-point {
+    background-color: var(--california-blue);
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    right: -0.83rem;
+    border-radius: 50%;
 }
 
 .right-box {
-    background-color: var(--california-blue);
+    background-color: var(--ivory);
     margin: 2.5%;
     height: 200px;
     border-radius: 15px;
