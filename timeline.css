@@ -32,7 +32,7 @@ nav {
     position: sticky;
     top: 0;
     background-color: var(--iceberg);
-    height: 50px;
+    height: 3.5rem;
 }
 
 #nav-items {
