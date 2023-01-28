@@ -23,6 +23,8 @@ body{
     --california-blue: #449DD1;
     --iceberg: #79A9D1;
     --columbia-blue: #ADCAD6;
+
+    --timeline-size: 0.25rem; /* rem = 16px, so anything that divides it will round */
 }
 
 nav {
@@ -64,7 +66,7 @@ h1 {
     left: 7.5vw;
     border-right: solid;
     border-color: var(--california-blue);
-    border-width: 0.16rem;
+    border-width: var(--timeline-size);
 }
 
 .left-box {
@@ -80,27 +82,36 @@ h1 {
     background-color: var(--california-blue);
     width: 1.5rem;
     height: 1.5rem;
-    position: absolute;
-    right: -0.83rem;
     border-radius: 50%;
+    position: absolute;
+    right: calc(-0.75rem - (var(--timeline-size) / 2)); /* push right by half of point width and account for border */ 
 }
 
 .right-box {
     background-color: var(--ivory);
-    margin: 2.5%;
-    height: 200px;
     border-radius: 15px;
     position: relative;
     left: 100%;
+    margin: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-point {
+    background-color: var(--california-blue);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(-1rem - 0.75rem + (var(--timeline-size) / 2)); /* push right by half of point width and account for border */
 }
 
 .box-content {
     padding: 1rem;
     display: flex;
-}
-
-.titles-and-photo {
-    
+    gap: 1rem;
 }
 
 .titles {
@@ -109,16 +120,12 @@ h1 {
     border-radius: 1rem;
 }
 
-.technologies {
-    /* width: 200px; */
-}
-
-.technologies-list {
+.techs-list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.technology {
+.tech {
     background-color: var(--iceberg);
     color: var(--ivory);
     border-radius: 3px;
@@ -129,22 +136,33 @@ h1 {
 img {
     width: 200px;
     height: 200px;
+    border-radius: 1rem;
 }
 
 /* Fonts */
 
 .time {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: left;
 }
 
 .title {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .details {
     width: 100%;
+    font-size: 1.25rem;
+    opacity: 75%;
+}
+
+.description {
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.tech-title {
     font-size: 1rem;
 }
