@@ -91,7 +91,7 @@ h1 {
     background-color: var(--ivory);
     border-radius: 15px;
     position: relative;
-    left: 100%;
+    left: calc(100% + var(--timeline-size)); /* accounts for border */
     margin: 1rem;
     border-radius: 1rem;
     display: flex;
@@ -105,7 +105,7 @@ h1 {
     height: 1.5rem;
     border-radius: 50%;
     position: absolute;
-    left: calc(-1rem - 0.75rem + (var(--timeline-size) / 2)); /* push right by half of point width and account for border */
+    left: calc(-1rem - 0.75rem - (var(--timeline-size) / 2)); /* push left by half of point width and account for border */
 }
 
 .box-content {
