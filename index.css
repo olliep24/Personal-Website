@@ -121,8 +121,21 @@ nav {
 .content-box {
     margin: 1rem 0;
     background-color: var(--ivory);
-    height: 200px;
     border-radius: 15px;
+    padding: 1rem;
+}
+
+.techs-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech {
+    background-color: var(--iceberg);
+    color: var(--ivory);
+    border-radius: 3px;
+    padding: 0.25rem;
+    margin: 0.25rem;
 }
 
 /* fonts */
