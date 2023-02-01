@@ -154,13 +154,13 @@ img {
 
 /* Fonts */
 
-.time {
+.title {
     width: 100%;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-align: left;
 }
 
-.title {
+.time {
     width: 100%;
     font-size: 1.25rem;
 }
@@ -177,5 +177,5 @@ img {
 }
 
 .tech-title {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
