@@ -14,15 +14,21 @@ body{
 }
 
 :root {
+    /* leftover colors - not used */
     --eton-blue: #A3C9A8;
     --dark-cornflower-blue: #324376;
     --hookers-green: #426A5A;
     --cream: #FFFDD0;
 
+    /* main themes */
     --ivory: #FFFFF0;
     --california-blue: #449DD1;
     --iceberg: #79A9D1;
     --columbia-blue: #ADCAD6;
+    
+    /* for buttons */ 
+    --azure: #F0FFFF;
+    --hover-azure: #daf8f8;
 
     --timeline-size: 0.25rem; /* rem = 16px, so anything that divides it will round */
 }
@@ -45,12 +51,33 @@ nav {
     align-items: center;
 }
 
-.nav-button {
+#nav-items a {
+    text-decoration: none;
+    color: black;
+}
+
+#home-nav-button {
     background-color: var(--ivory);
     color: black;
     text-decoration: none;
     padding: 0.5rem;
     border-radius: 0.5rem;
+}
+
+#home-nav-button:hover {
+    background-color: var(--hover-azure);
+}
+
+#timeline-nav-button {
+    background-color: var(--azure);
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#timeline-nav-button:hover {
+    background-color: var(--hover-azure);
 }
 
 h1 {
