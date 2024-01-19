@@ -167,6 +167,33 @@ nav {
     margin: 0.25rem;
 }
 
+#highlighted-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.highlighted-project {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .25s;
+    -o-transition: all .25s;
+    -moz-transition: all .25s;
+    -webkit-tranisiton: all .25s;
+}
+
+.highlighted-project:hover {
+    transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
 footer {
     height: 2rem;
 }
