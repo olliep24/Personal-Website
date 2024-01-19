@@ -144,7 +144,7 @@ nav {
     position: relative;
     left: calc(7.5vw + 15rem + 2rem);
     width: calc(100vw - 7.5vw - 7.5vw - 15rem - 2rem);
-    height: 1000px;
+    
 }
 
 .content-box {
