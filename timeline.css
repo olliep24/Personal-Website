@@ -142,6 +142,12 @@ h1 {
     gap: 1rem;
 }
 
+
+.image-and-desc {
+    /* constrain to image size */
+    width: 13vw;
+}
+
 .titles {
     background-color: var(--columbia-blue);
     padding: 1rem;
