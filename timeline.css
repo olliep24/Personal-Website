@@ -22,13 +22,13 @@ body{
 
     /* main themes */
     --ivory: #FFFFF0;
-    --california-blue: #449DD1;
-    --iceberg: #79A9D1;
-    --columbia-blue: #ADCAD6;
+    --california-blue: #BFBFBF; /* Tertiary color */
+    --iceberg: #3F4045; /* Secondary color */
+    --columbia-blue: #575757; /* Primary color */
     
     /* for buttons */ 
     --azure: #F0FFFF;
-    --hover-azure: #daf8f8;
+    --hover-azure: #BFBFBF;
 
     --timeline-size: 0.25rem; /* rem = 16px, so anything that divides it will round */
 }
@@ -49,6 +49,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#nav-items h1 {
+    text-decoration: none;
+    color: var(--ivory);
 }
 
 #nav-items a {
